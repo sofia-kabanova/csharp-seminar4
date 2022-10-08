@@ -29,7 +29,10 @@ void PrintArray(int[] array)
 {
     for (int i = 0; i < length; i++)
     {
+        // Console.Write($"{arr[i]},"); //выводим печать итого (i) элемента
+        // через запятую
         Console.Write(arr[i]); //выводим печать итого (i) элемента
+        // без запятой
     }   
 }
 FillArray(arr);
