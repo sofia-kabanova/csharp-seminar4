@@ -35,5 +35,6 @@ void PrintArray(int[] array)
         // без запятой
     }   
 }
+
 FillArray(arr);
 PrintArray(arr);

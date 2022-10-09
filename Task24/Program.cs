@@ -4,7 +4,7 @@
 // Например:
 // 7->28
 // 4->10
-// 8->36r
+// 8->36
 Console.WriteLine("Введите число");
 int number = Convert.ToInt32(Console.ReadLine());
 int SumNumbers(int num)// вводим метод для вычисления суммы
