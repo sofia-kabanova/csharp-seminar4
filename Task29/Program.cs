@@ -13,11 +13,12 @@ int[] arr = new int [length]; //создали массив из length элем
 
 void FillArray(int[] array)// делаем метод, который заполняет массив
 {
+    Random rnd = new Random();
     for (int i = 0; i<length; i++)
     {
         // arr[i] = new Random().Next(0, 10); 
         //записываем в индекс i случайное значение от 0 до 10
-        arr[i] = new Random().Next(); 
+        arr[i] = rnd.Next(); 
         //записываем в индекс i случайное число
     }
 }
