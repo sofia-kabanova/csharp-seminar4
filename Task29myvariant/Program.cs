@@ -12,37 +12,36 @@ Console.Write("Min: ");
 int minNumber = Convert.ToInt32(Console.ReadLine());
 Console.Write("Max: ");
 int maxNumber = Convert.ToInt32(Console.ReadLine());
-int[] arr = new int [length]; //создали массив из length элементов
+int[] arr = new int[length]; //создали массив из length элементов
 // int по умолчанию инициализируется нулем, поэтому данный массив
 // состоит из восьми нулей: [0,0,0,0,0,0,0,0]
 
 void FillArray(int[] array, int min, int max)// делаем метод, который заполняет массив
 {
     Random rnd = new Random();
-    for (int i = 0; i<length; i++)
+    for (int i = 0; i < length; i++)
     {
         // arr[i] = new Random().Next(0, 10); 
         //записываем в индекс i случайное значение от 0 до 10
-        arr[i] = rnd.Next(min,max); 
+        arr[i] = rnd.Next(min, max);
         //записываем в индекс i случайное число
     }
 }
-void PrintNumbers(int[] array) 
+void PrintNumbers(int[] array)
 {
     for (int i = 0; i < array.Length; i++)
     {
-       if(i<array.Length - 1) Console.Write($"{array[i]}, ");
-       else Console.Write($"{array[i]} ");
+        if (i < array.Length - 1) Console.Write($"{array[i]}, ");
+        else Console.Write($"{array[i]} ");
     }
 }
-
-void PrintArray(int[] array) 
+void PrintArray(int[] array)
 {
-     Console.Write("[ ");
+    Console.Write("[ ");
     for (int i = 0; i < array.Length; i++)
     {
-       if(i<array.Length - 1) Console.Write($"{array[i]}, ");
-       else Console.Write($"{array[i]} ");
+        if (i < array.Length - 1) Console.Write($"{array[i]}, ");
+        else Console.Write($"{array[i]} ");
     }
     Console.Write("]");
 }

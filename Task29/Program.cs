@@ -18,38 +18,37 @@ int maxNumber = Convert.ToInt32(Console.ReadLine());
 
 int[] FillArray(int length, int min, int max)// делаем метод, который заполняет массив
 {
-    int[] array = new int [length]; // ?
+    int[] array = new int[length]; // ?
     Random rnd = new Random();
-    for (int i = 0; i<length; i++)
+    for (int i = 0; i < length; i++)
     {
         // arr[i] = new Random().Next(0, 10); 
         //записываем в индекс i случайное значение от 0 до 10
-        array[i] = rnd.Next(min,max); 
+        array[i] = rnd.Next(min, max);
         //записываем в индекс i случайное число
     }
     return array;
 }
-void PrintNumbers(int[] array) 
+void PrintNumbers(int[] array)
 {
     for (int i = 0; i < array.Length; i++)
     {
-       if(i<array.Length - 1) Console.Write($"{array[i]}, ");
-       else Console.Write($"{array[i]} ");
+        if (i < array.Length - 1) Console.Write($"{array[i]}, ");
+        else Console.Write($"{array[i]} ");
     }
 }
-
-void PrintArray(int[] array) 
+void PrintArray(int[] array)
 {
-     Console.Write("[ ");
+    Console.Write("[ ");
     for (int i = 0; i < array.Length; i++)
     {
-       if(i<array.Length - 1) Console.Write($"{array[i]}, ");
-       else Console.Write($"{array[i]} ");
+        if (i < array.Length - 1) Console.Write($"{array[i]}, ");
+        else Console.Write($"{array[i]} ");
     }
     Console.Write("]");
 }
 Console.WriteLine($"Массив из {size} чисел: ");
-int[] arr = FillArray (size, minNumber, maxNumber);
+int[] arr = FillArray(size, minNumber, maxNumber);
 // FillArray(arr, minNumber, maxNumber);
 PrintNumbers(arr);
 Console.Write($" - > ");

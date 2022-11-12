@@ -21,7 +21,7 @@ int SumNumbers(int num)// вводим метод для вычисления с
     }
     return sum;
 }
-int sumNumbers = SumNumbers(number); 
+int sumNumbers = SumNumbers(number);
 // переменная, куда записываем возвращенное методом значание
 Console.WriteLine($"Сумма чисел от 1 до {number} = {sumNumbers}");
 

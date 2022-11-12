@@ -8,15 +8,15 @@
 Console.WriteLine("Введите число");
 int number = Convert.ToInt32(Console.ReadLine());
 int number1 = default;
-if (number<0) number1 = -number;
+if (number < 0) number1 = -number;
 else number1 = number;
 int SumNumbers(int num)// вводим метод для вычисления суммы
 {
     int sum = default;
     for (int i = 0; num > 0; i++)
-    { 
-       sum += num % 10;
-       num/=10;
+    {
+        sum += num % 10;
+        num /= 10;
     }
     return sum;
 }

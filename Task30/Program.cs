@@ -11,22 +11,21 @@
 Console.WriteLine("Введите  длинну массива:");
 int length = Convert.ToInt32(Console.ReadLine());
 //int length = 8;
-int[] arr = new int [length]; //создали массив из 8 элементов
+int[] arr = new int[length]; //создали массив из 8 элементов
 // int по умолчанию инициализируется нулем, поэтому данный массив
 // состоит из восьми нулей: [0,0,0,0,0,0,0,0]
 
 void FillArray(int[] array)// делаем метод, который заполняет массив
 {
-    Random rnd = new Random (); //создаем переменную для генерации случайных чисел
-    for (int i = 0; i<length; i++)
+    Random rnd = new Random(); //создаем переменную для генерации случайных чисел
+    for (int i = 0; i < length; i++)
     {
-        arr[i] = rnd.Next(0,2); //записываем в индекс i случайное значение 
+        arr[i] = rnd.Next(0, 2); //записываем в индекс i случайное значение 
         // в диапазоне от 0 до 1
     }
-    
-}
 
-void PrintArray(int[] array) 
+}
+void PrintArray(int[] array)
 {
     for (int i = 0; i < length; i++)
     {
@@ -34,7 +33,7 @@ void PrintArray(int[] array)
         // через запятую
         Console.Write(arr[i]); //выводим печать итого (i) элемента
         // без запятой
-    }   
+    }
 }
 
 FillArray(arr);

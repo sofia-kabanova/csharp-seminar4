@@ -13,9 +13,9 @@ int number = Convert.ToInt32(Console.ReadLine());
 int Count(int num)
 {
     int i; // или int i = default для читаемости кода
-    for (i = 0; num>0; i++)
+    for (i = 0; num > 0; i++)
     {
-       num /= 10; //  деление на 10
+        num /= 10; //  деление на 10
     }
     return i;
 }

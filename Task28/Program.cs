@@ -17,6 +17,6 @@ int FctrlNumbers(int num)// вводим метод для вычисления 
     }
     return fctrl;
 }
-int fctrlNumbers = FctrlNumbers(number); 
+int fctrlNumbers = FctrlNumbers(number);
 // переменная, куда записываем возвращенное методом значание
 Console.WriteLine($"Произведение чисел от 1 до {number} (факториал {number})= {fctrlNumbers}");
